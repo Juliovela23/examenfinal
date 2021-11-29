@@ -1,0 +1,11 @@
+{% extends 'Estudiantes/base.html' %} {% block content %}
+<h1>Cursos registrados en el sistema</h1>{% for cursos in cursos %}
+<div class="card" style="width: auto; margin: auto auto;">
+    <div class="card-body">
+        <h5 class="card-title">Nombre: {{ cursos.nombrecurso }}</h2>
+            <p class="card-text ">descripcion: {{cursos.descripcion}}</p>
+            <p class="card-text ">Año escolar: {{cursos.anio_escolar}}</p>
+            <p class="card-text ">grado: {{cursos.grado}}</p>
+    </div>
+</div>
+<br> {% endfor %} {% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'Estudiantes/base.html' %} {% block content %}
+<h1>Estudiantes registrados en el sistema</h1> {% for estudiantes in estudiantes %}
+<div class="card" style="width: auto; margin: auto auto;">
+    <div class="card-body">
+        <h5 class="card-title">Nombre: {{ estudiantes.nombre }} {{ estudiantes.apellido }}</h2>
+            <p class="card-text ">Fecha de nacimiento: {{estudiantes.fecha_nacimiento}}</p>
+            <p class="card-text ">Fecha inscripcion: {{estudiantes.fecha_inscripcion}}</p>
+            <p class="card-text ">carnet: {{estudiantes.carnet}}</p>
+    </div>
+</div>
+<br> {% endfor %} {% endblock %}
